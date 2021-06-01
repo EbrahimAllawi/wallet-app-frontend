@@ -1,0 +1,90 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: 0 !important;
+    padding: 0;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 600px !important;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+* {
+  font-weight: normal;
+}
+
+.main {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  font-size: 20px;
+  color: #734d26;
+  font-weight: bold;
+}
+
+.app::-webkit-scrollbar {
+  width: 9px;
+  /* width of the entire scrollbar */
+}
+
+.app::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+.app::-webkit-scrollbar-thumb {
+  background-color: #114e63;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+}
+
+.app {
+  height: 100vh;
+  border-radius: 5px;
+  background-color: #e69873  !important;
+  -webkit-filter: drop-shadow(0px 0px 10px #000);
+          filter: drop-shadow(0px 0px 10px #000);
+  overflow-y: auto;
+}
+
+.my-nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  direction: rtl;
+  justify-items: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #734d26;
+  padding: 5px;
+}
+
+.my-nav .bar {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+
+.my-nav .rigister-login {
+  margin-right: 10px;
+}
+
+.my-nav .rigister-login a {
+  color: white;
+}
+
+.input-value-operation {
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */

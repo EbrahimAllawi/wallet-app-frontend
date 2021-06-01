@@ -1,0 +1,60 @@
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.operation {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #734d26;
+}
+
+.rigisterLogin {
+  position: relative;
+  top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
+.rigisterLogin .inputs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0px;
+}
+
+.rigisterLogin .inputs div {
+  display: inline;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.rigisterLogin .inputs input {
+  outline: none;
+  border: 2px solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 15px;
+  -webkit-transition: .2s border;
+  transition: .2s border;
+}
+
+.rigisterLogin .inputs input:focus {
+  border-bottom: 2px solid #734d26;
+}
+/*# sourceMappingURL=rigisterLogin.css.map */

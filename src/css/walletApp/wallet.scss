@@ -1,0 +1,205 @@
+$main: #734d26;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .category {
+        display: none;
+    }
+    .my-operation .values, .keys {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    .modal-body .my-operation .values, .keys {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: 2fr 2fr !important;
+    }
+    .my-pays .my-operation {
+        justify-items: center;
+    }
+    .edite {
+        right: 0 !important;
+    }
+    .delete {
+        left: 0 !important;
+    }
+    .modal-edit-body .inputs-operation {
+        width: 100% !important;
+
+    }
+}
+// eccba9 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+.ant-card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.my-operation {
+    font-size: 20px;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    margin-top: 30px;
+    padding: 5px;
+    background: #114e63;
+    color: #fff;
+    border-radius: 5px;
+    transition: filter .3s;
+    position: relative;
+    // filter: drop-shadow(0px 0px 10px #114e63);
+}
+.my-operation:hover {
+    filter: drop-shadow(0px 5px 10px #114e63);
+
+}
+.edit-delete {
+    cursor: pointer;
+    width: max-content;
+    position: relative;
+    border-radius: 100%;
+    background: white;
+    font-size: 20px;
+}
+.edite {
+    top: 0px;
+    right: -35px;
+    color: #4f4fd4;
+}
+.delete {
+    top: 0px;
+    left: -15px;
+    color: #fb3e3e;
+}
+.my-operation .keys {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    cursor: pointer;
+    background: #abc;
+    color: black;
+    border-radius: 5px;
+}
+.modal-body .my-operation {
+    background: none;
+    color: white;
+}
+.modal-body .my-operation .values {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    background: #114e63;
+    color: white;
+}
+.my-operation .values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 5px;
+    justify-items: center;
+    cursor: pointer;
+}
+.values .date {
+    direction: rtl;
+}
+.details {
+    height: 35px;
+    overflow-y: hidden;
+    text-align: center;
+}
+.values .details {
+    overflow-y: auto;
+}
+
+.modal-operation {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #0009;
+    z-index: 100;
+    transition: all .5s;
+}
+//modal operation
+.modal-operation-show {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.modal-operation-show .modal-box {
+    cursor: pointer;
+    width: 100%;
+    height: 235px;
+    background-color: #fff;
+    font-size: 20px;
+}
+.modal-operation-show .modal-box .modal-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #555;
+    height: 40px;
+
+}
+
+.modal-operation-show .modal-box .modal-head > span {
+    margin-left: 10px;
+}
+
+.modal-operation-show .modal-box .modal-head .close {
+    text-align: right;
+}
+
+.modal-operation-show .modal-box .modal-body {
+    display: grid;
+    // justify-items: center;
+    align-items: flex-start;
+
+}
+//modal edit operation
+.modal-edite {
+    grid-template-rows: 50px 1fr;
+    align-items: center;
+}
+.modal-edite .modal-edit-head {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-items: right;
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+
+}
+.modal-edite .modal-edit-head div:nth-child(2) {
+    cursor: pointer;
+}
+.modal-edite .modal-edit-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.modal-edit-body .inputs-operation {
+    width: 55%;
+    margin-top: 10px;
+}

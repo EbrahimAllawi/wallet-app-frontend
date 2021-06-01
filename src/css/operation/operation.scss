@@ -1,0 +1,108 @@
+$main: #734d26;
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+// eccba9 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+.operation {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    padding-top: 10px;
+}
+.operation .add-operation {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+    height: 0;
+    overflow: hidden;
+    
+}
+.operation .btn-add-operation {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: $main;
+    cursor: pointer;
+    color: #00f9f9;
+    height: 50px;
+    z-index: 1;
+}
+.operation .btn-add-operation span {
+    font-size: 25px;
+    z-index: 10;
+}
+.operation .btn-add-operation div {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.menu-category {
+    width: 200px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    
+
+}
+.icon-category {
+    font-size: 20px;
+    width: 10px;
+    color: #000;
+
+}
+.name-category {
+    display: inline;
+
+}
+.ant-dropdown {
+    min-width: max-content !important;
+    // left: 35vw !important;
+    // transition: _open 1s ease-in forwards;
+}
+
+// #47ab88
+// #0b0920
+
+
+@keyframes open-operation {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 200px;
+    }
+}
+
+@keyframes close-operation {
+    from {
+        height: 200px;
+    }
+    to {
+        height: 0;
+    }
+}
+

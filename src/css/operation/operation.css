@@ -1,0 +1,113 @@
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+.operation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-gap: 10px;
+  padding-top: 10px;
+}
+
+.operation .add-operation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  grid-gap: 10px;
+  height: 0;
+  overflow: hidden;
+}
+
+.operation .btn-add-operation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  background-color: #734d26;
+  cursor: pointer;
+  color: #00f9f9;
+  height: 50px;
+  z-index: 1;
+}
+
+.operation .btn-add-operation span {
+  font-size: 25px;
+  z-index: 10;
+}
+
+.operation .btn-add-operation div {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.menu-category {
+  width: 200px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.icon-category {
+  font-size: 20px;
+  width: 10px;
+  color: #000;
+}
+
+.name-category {
+  display: inline;
+}
+
+.ant-dropdown {
+  min-width: -webkit-max-content !important;
+  min-width: -moz-max-content !important;
+  min-width: max-content !important;
+}
+
+@-webkit-keyframes open-operation {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 200px;
+  }
+}
+
+@keyframes open-operation {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 200px;
+  }
+}
+
+@-webkit-keyframes close-operation {
+  from {
+    height: 200px;
+  }
+  to {
+    height: 0;
+  }
+}
+
+@keyframes close-operation {
+  from {
+    height: 200px;
+  }
+  to {
+    height: 0;
+  }
+}
+/*# sourceMappingURL=operation.css.map */
